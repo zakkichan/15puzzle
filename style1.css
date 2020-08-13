@@ -1,0 +1,121 @@
+body{
+  background-color: #ffeeaa;
+  font-size: 16px;
+}
+
+.obj1{
+  background-color: #999999;
+  border: 2px solid #ffeeaa;
+  width: 86px;
+  height: 86px;
+}
+
+.obj2{
+  background-color: #999999;
+  border: 2px solid #ffeeaa;
+  width: 76px;
+  height: 86px;
+}
+
+.obj3{
+  background-color: #999999;
+  border: 2px solid #ffeeaa;
+  width: 86px;
+  height: 76px;
+}
+  
+
+select {
+ height: 24px;
+}
+
+input[type="text"] {
+ height: 18px;
+}
+
+input[type="button"] {
+ cursor: pointer;
+ height: 24px;
+}
+
+input[type="submit"] {
+ cursor: pointer;
+ height: 24px;
+}
+
+input[type="reset"] {
+ cursor: pointer;
+ height: 24px;
+}
+
+button[type="button"] {
+ cursor: pointer;
+ height: 24px;
+}
+
+button[type="submit"] {
+ cursor: pointer;
+ height: 24px;
+}
+
+button[type="reset"] {
+ cursor: pointer;
+ height: 24px;
+}
+
+input[type="button"][value="ScrollLock"] {
+ background-color: #ffff66;
+}
+
+input[type="button"][value="ScrollLock"]:focus {
+ background-color: #ff6600;
+}
+
+#gamemenu {
+ line-height: 1.6em;
+ font-weight: bold;
+ letter-spacing: -0.1em;
+}
+
+#gamemenu a {
+ text-decoration: none;
+}
+
+#gamemenu a:hover {
+ text-decoration: underline;
+}
+
+@media screen and (max-width:639px) {
+
+  select {
+    height: 30px;
+  }
+
+  input[type="text"] {
+    height: 24px;
+  }
+
+  input[type="button"] {
+    height: 32px;
+  }
+
+  input[type="submit"] {
+    height: 32px;
+  }
+
+  input[type="reset"] {
+    height: 32px;
+  }
+
+  button[type="button"] {
+    height: 32px;
+  }
+
+  button[type="submit"] {
+    height: 32px;
+  }
+
+  button[type="reset"] {
+    height: 32px;
+  }
+}

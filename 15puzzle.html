@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="15パズルです">
+    <link rel="stylesheet" href="style1.css">
+    <script type="text/javascript" src="script1.js"></script>
+    <title>15パズル</title>
+  </head>
+  <body>
+    <div class="obj1" style="position:absolute; left:90px; top:20px">
+    </div>
+    <div class="obj2" style="position:absolute; left:180px; top:20px">
+    </div>
+    <div class="obj2" style="position:absolute; left:260px; top:20px">
+    </div>
+    <div class="obj1" style="position:absolute; left:340px; top:20px">
+    </div>
+    <div class="obj3" style="position:absolute; left:90px; top:110px">
+    </div>
+    <div class="obj3" style="position:absolute; left:340px; top:110px">
+    </div>
+    <div class="obj3" style="position:absolute; left:90px; top:190px">
+    </div>
+    <div class="obj3" style="position:absolute; left:340px; top:190px">
+    </div>
+    <div class="obj1" style="position:absolute; left:90px; top:270px">
+    </div>
+    <div class="obj2" style="position:absolute; left:180px; top:270px">
+    </div>
+    <div class="obj2" style="position:absolute; left:260px; top:270px">
+    </div>
+    <div class="obj1" style="position:absolute; left:340px; top:270px">
+    </div>
+
+    <script>
+      setTimeout(function(){
+        for(h=0;h<=5;h++){
+          for(i=1;i<=16;i++){
+            (new Image()).src = "images/"+i+".gif";
+          }
+        }
+      },1000);
+
+      for(x=1;x<=4;x++){
+        for(y=1;y<=4;y++){  
+          document.write('<img id="x'+x+'y'+y+'" src="images/16.gif" style="position:absolute; left:'+(20+x*80)+'px; top:'+(-50+y*80)+'px; width:80px; height:80px" onclick="myExchange('+x+','+y+')">');
+        }
+      }
+    </script>
+
+    <div id="pagewidth" style="position:absolute; left:0px; top:0px; width:430px">
+    <div id="message" style="position:absolute; left:145px; top:160px">
+    ゲームクリア！
+    </div>
+
+    <div style="position:absolute; left:100px; top:370px">
+      <form name="GForm">
+        <div id="click">
+        移動回数 0回
+        </div>        
+        <input name="GSelect" type="button" value="ホームへ戻る" onclick="location.href='http://zakichan.sub.jp/'"> 
+        <input name="GStart" type="button" value="スタート" onclick="myStart()">
+        <input name="GGive" type="button" value="ギブアップ" onclick="myGive()">
+      </form>
+    </div>
+
+    <script>
+
+      document.GForm.GGive.disabled = true;
+
+      document.getElementById("message").style.fontSize = "32px";
+      document.getElementById("message").style.color = "red";
+      document.getElementById("message").style.fontWeight = "bold";
+      myVisi("message",false);
+    </script>
+  </body>
+</html>
