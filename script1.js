@@ -1,3 +1,5 @@
+"use strict";
+
 var ClickCnt;
 var myPicture;
 GameFlg = false;
